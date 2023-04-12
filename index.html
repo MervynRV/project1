@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+  <div class="alert-box">
+    <p class="alert">msg</p>
+
+  </div>
+  <div class="form">
+    <h1 class="heading">Login</h1>
+    <form name="Submission" method="post" action="authentication.php" target="_self">
+      <div class="form">
+        <input type="text" id="username" placeholder="Enter username" name="username" oninput="resetMsg()" required>        
+        <input type="password" placeholder="Enter Password" name="password" required >
+        <button type="submit" class="submit-btn">Submit</button><br>
+        <a href="register.html" target="blank" class="link">Don't have an Account? Create one!</a>        
+      </div>
+    </form>
+  </div>
+  <script src="js/form.js"></script>
+</body>
+
+</html>

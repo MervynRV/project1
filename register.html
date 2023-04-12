@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="css/forms.css">
+
+</head>
+
+<body>
+  <div class="alert-box">
+    <p class="alert">msg</p>
+
+  </div>
+  <div class="form">
+    <h1 class="heading">Register</h1>
+    <form name="form" method="post" action="newaccount.php" target="_self" onsubmit="return checkPassword(this)">
+      <input type="text" placeholder="Enter Full Name" name="newname" required>
+      <input type="password" placeholder="Enter Password" name="newpassword" required>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
